@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Nibble - Fresh Organic Sprouts & Healthy Foods</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="logo.png" alt="My Daily Nibble" class="logo">
+                    <div>
+                        <h1 class="brand-name">My Daily Nibble</h1>
+                        <p class="brand-tagline">Rooted in Nature</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h2 class="hero-title">Fresh Sprouts,<br>Healthy Life</h2>
+                    <p class="hero-description">
+                        Discover nature's finest selection of organic sprouts and fresh produce. 
+                        Handpicked daily to bring you the purest nutrition from farm to table.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/919876543210?text=Hi,%20I%20am%20interested%20in%20your%20products!" 
+                           target="_blank" class="btn btn-primary">
+                            📱 Order on WhatsApp
+                        </a>
+                        <a href="#products" class="btn btn-outline">Browse Products</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1638370715510-8a67470df03d?w=800&q=85" 
+                         alt="Fresh Sprouts" class="hero-image">
+                    <div class="hero-badge">
+                        <p class="badge-text">100% Organic</p>
+                        <p class="badge-title">Certified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-description">
+                    Fresh, nutritious, and handpicked daily for your health and wellness
+                </p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+                <button class="filter-btn" onclick="filterProducts('sprouts')">Sprouts</button>
+                <button class="filter-btn" onclick="filterProducts('healthy-items')">Healthy Items</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="sprouts">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1758701925687-1449ab265c2e?w=600&q=85" 
+                             alt="Organic Moong Sprouts" class="product-image">
+                        <span class="stock-badge">In Stock</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Organic Moong Sprouts</h3>
+                        <p class="product-description">
+                            Fresh, nutritious moong bean sprouts packed with protein and fiber. Perfect for salads and healthy meals.
+                        </p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">High in Protein</span>
+                            <span class="benefit-tag">Rich in Fiber</span>
+                            <span class="benefit-tag">Boosts Immunity</span>
+                        </div>
+                        <div class="product-price-section">
+                            <div>
+                                <p class="product-price">₹45</p>
+                                <p class="product-unit">250g</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20order%20Organic%20Moong%20Sprouts%20(250g)%20-%20₹45" 
+                           target="_blank" class="btn btn-secondary btn-full">
+                            📱 Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="sprouts">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551807501-6e7ddf96e797?w=600&q=85" 
+                             alt="Chickpea Sprouts" class="product-image">
+                        <span class="stock-badge">In Stock</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Chickpea Sprouts</h3>
+                        <p class="product-description">
+                            Crunchy and delicious chickpea sprouts, loaded with vitamins and minerals for your daily health.
+                        </p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Energy Booster</span>
+                            <span class="benefit-tag">Heart Healthy</span>
+                            <span class="benefit-tag">Weight Management</span>
+                        </div>
+                        <div class="product-price-section">
+                            <div>
+                                <p class="product-price">₹50</p>
+                                <p class="product-unit">250g</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20order%20Chickpea%20Sprouts%20(250g)%20-%20₹50" 
+                           target="_blank" class="btn btn-secondary btn-full">
+                            📱 Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="sprouts">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1638370715510-8a67470df03d?w=600&q=85" 
+                             alt="Mixed Sprouts Combo" class="product-image">
+                        <span class="stock-badge">In Stock</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Mixed Sprouts Combo</h3>
+                        <p class="product-description">
+                            A wholesome mix of moong, chickpea, and lentil sprouts for maximum nutritional benefits.
+                        </p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Complete Nutrition</span>
+                            <span class="benefit-tag">Antioxidant Rich</span>
+                            <span class="benefit-tag">Improves Metabolism</span>
+                        </div>
+                        <div class="product-price-section">
+                            <div>
+                                <p class="product-price">₹65</p>
+                                <p class="product-unit">300g</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20order%20Mixed%20Sprouts%20Combo%20(300g)%20-%20₹65" 
+                           target="_blank" class="btn btn-secondary btn-full">
+                            📱 Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="healthy-items">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1747292718361-c838a9968ec7?w=600&q=85" 
+                             alt="Fresh Green Salad Mix" class="product-image">
+                        <span class="stock-badge">In Stock</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Fresh Green Salad Mix</h3>
+                        <p class="product-description">
+                            Hand-picked fresh greens with sprouts, perfect for healthy salads and wraps.
+                        </p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Low Calorie</span>
+                            <span class="benefit-tag">Vitamin Packed</span>
+                            <span class="benefit-tag">Fresh Daily</span>
+                        </div>
+                        <div class="product-price-section">
+                            <div>
+                                <p class="product-price">₹70</p>
+                                <p class="product-unit">350g</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20order%20Fresh%20Green%20Salad%20Mix%20(350g)%20-%20₹70" 
+                           target="_blank" class="btn btn-secondary btn-full">
+                            📱 Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="healthy-items">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1760562796021-d8bbcb5bc318?w=600&q=85" 
+                             alt="Organic Vegetable Pack" class="product-image">
+                        <span class="stock-badge">In Stock</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Organic Vegetable Pack</h3>
+                        <p class="product-description">
+                            Fresh, pesticide-free vegetables sourced directly from organic farms.
+                        </p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">100% Organic</span>
+                            <span class="benefit-tag">No Pesticides</span>
+                            <span class="benefit-tag">Fresh Harvest</span>
+                        </div>
+                        <div class="product-price-section">
+                            <div>
+                                <p class="product-price">₹120</p>
+                                <p class="product-unit">1kg</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20order%20Organic%20Vegetable%20Pack%20(1kg)%20-%20₹120" 
+                           target="_blank" class="btn btn-secondary btn-full">
+                            📱 Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="sprouts">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1638370715510-8a67470df03d?w=600&q=85" 
+                             alt="Alfalfa Sprouts" class="product-image">
+                        <span class="stock-badge">In Stock</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Alfalfa Sprouts</h3>
+                        <p class="product-description">
+                            Delicate and mild alfalfa sprouts, excellent source of vitamins A, C, and K.
+                        </p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Low in Calories</span>
+                            <span class="benefit-tag">Vitamin Rich</span>
+                            <span class="benefit-tag">Aids Weight Loss</span>
+                        </div>
+                        <div class="product-price-section">
+                            <div>
+                                <p class="product-price">₹40</p>
+                                <p class="product-unit">200g</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20order%20Alfalfa%20Sprouts%20(200g)%20-%20₹40" 
+                           target="_blank" class="btn btn-secondary btn-full">
+                            📱 Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="why-choose">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-image">
+                    <img src="https://images.unsplash.com/photo-1760562796021-d8bbcb5bc318?w=800&q=85" 
+                         alt="Why Choose Us" class="why-img">
+                </div>
+                <div class="why-content">
+                    <h2 class="section-title">Why Choose Us?</h2>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">🌿</div>
+                            <div class="feature-text">
+                                <h3 class="feature-title">100% Organic</h3>
+                                <p class="feature-desc">All our products are certified organic, free from harmful pesticides and chemicals.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">❤️</div>
+                            <div class="feature-text">
+                                <h3 class="feature-title">Fresh Daily</h3>
+                                <p class="feature-desc">Harvested and delivered fresh every day to ensure maximum nutrition and taste.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <div class="feature-text">
+                                <h3 class="feature-title">Quality Assured</h3>
+                                <p class="feature-desc">Rigorous quality checks and certifications to guarantee the best for your family.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Licenses Section -->
+    <section class="licenses">
+        <div class="container">
+            <h3 class="section-title text-center">Certified & Trusted</h3>
+            <div class="license-grid">
+                <div class="license-card">
+                    <div class="license-icon">📄</div>
+                    <h4 class="license-title">FSSAI License</h4>
+                    <p class="license-number">21526007000459</p>
+                </div>
+                <div class="license-card">
+                    <div class="license-icon">🛡️</div>
+                    <h4 class="license-title">GSTIN</h4>
+                    <p class="license-number">27FBRPD0720B1Z3</p>
+                </div>
+                <div class="license-card">
+                    <div class="license-icon">🏆</div>
+                    <h4 class="license-title">MSME</h4>
+                    <p class="license-number">UDYAM-MH-19-0416333</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Stay Updated</h2>
+                <p class="newsletter-desc">
+                    Subscribe to receive updates, access to exclusive deals, and fresh produce alerts.
+                </p>
+                <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                    <input type="email" placeholder="Enter your email" required class="newsletter-input">
+                    <button type="submit" class="btn btn-secondary">✉️ Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo.png" alt="My Daily Nibble" class="footer-logo">
+                    <h3 class="footer-brand">My Daily Nibble</h3>
+                    <p class="footer-tagline">Rooted in Nature, Crafted for You</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>📞 +91 98765 43210</li>
+                        <li>✉️ contact@mydailynibble.com</li>
+                        <li>📍 Mumbai, Maharashtra</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 My Daily Nibble. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hi,%20I%20am%20interested%20in%20your%20products!" 
+       target="_blank" class="whatsapp-float">
+        💬
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
